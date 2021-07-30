@@ -48,7 +48,6 @@ public:
   }
   virtual bool control() override
   {
-    std::cout << body_->numJoints() << std::endl;
     for (std::size_t idx = 0; idx < body_->numJoints(); ++idx) {
       cnoid::Link * joint = body_->joint(idx);
       const double q = joint->q();
