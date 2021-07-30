@@ -44,7 +44,6 @@ public:
       while (getline(i_stream, delimeter, ',')) { pd_line.push_back(std::atof(delimeter.c_str())); }
       pd_gain_.push_back(std::make_pair(pd_line[0], pd_line[1]));
     }
-    for (const auto p : pd_gain_) {}
   }
   virtual bool control() override
   {
