@@ -16,7 +16,6 @@ public:
     this->io = io;
     body_ = io->body();
     dt_ = io->timeStep();
-    std::cout << body_->joint(0)->q() << std::endl;
 
     for (std::size_t idx = 0; idx < body_->numJoints(); ++idx) {
       cnoid::Link * joint = body_->joint(idx);
